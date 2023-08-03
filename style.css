@@ -56,15 +56,19 @@ header .shopping span{
 }
 .list .item{
     text-align: center;
-    background-color: #DCE0E1;
+    background-color: #FFFFFF;
     padding: 20px;
     box-shadow: 0 50px 50px #757676;
     letter-spacing: 1px;
+    transition: transform 0.3s;
+    border-radius: 10px;
 }
 .list .item img{
     width: 90%;
     height: 250px;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .list .item .title{
     font-weight: 600;
