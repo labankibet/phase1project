@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
 body{
     background-color: #E3E7E8;
-    font-family: system-ui;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 .container{
     width: 1000px;
     margin: auto;
+    padding: 20px;
     transition: 0.5s;
 }
 header{
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+header h1 {
+    font-size: 36px;
+    color: #1C1F25;
+    margin: 0;
 }
 header .shopping{
     position: relative;
@@ -20,7 +32,7 @@ header .shopping img{
     width: 40px;
 }
 header .shopping span{
-    background: red;
+    background: green;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -79,7 +91,7 @@ header .shopping span{
 }
 .card h1{
     color: #E8BC0E;
-    font-weight: 100;
+    font-weight: 600;
     margin: 0;
     padding: 0 20px;
     height: 80px;
@@ -92,7 +104,6 @@ header .shopping span{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 .card .checkOut div{
     background-color: #E8BC0E;

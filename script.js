@@ -49,7 +49,7 @@ let products = [
         id: 6,
         name: 'ITALIAN PANEER',
         image: '6.PNG',
-        price: 120000
+        price: 1100
     }
 ];
 
