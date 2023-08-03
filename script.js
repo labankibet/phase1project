@@ -66,3 +66,13 @@ function initApp(){
         list.appendChild(newDiv);
     })
 }
+
+initApp();
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
+}
