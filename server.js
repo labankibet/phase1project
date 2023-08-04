@@ -1,9 +1,9 @@
-onst express = require('express');
+const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Sample food item data (you can replace this with your actual data from a database)
 const products = [
+    // Food item data goes here...
     {
         id: 1,
         name: 'PANEER BHURJI',
@@ -40,7 +40,6 @@ const products = [
         image: '6.PNG',
         price: 1100
     }
-    
 ];
 
 // Endpoint to fetch all food items
