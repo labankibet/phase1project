@@ -111,3 +111,17 @@ function changeQuantity(key, quantity){
     }
     reloadCart();
 }
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', (event) => {
+    const query = event.target.value.toLowerCase();
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(item => {
+        const itemName = item.querySelector('.title').innerText.toLowerCase();
+        if (itemName.includes(query)) {
+            item.style.display = 'grid';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});

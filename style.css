@@ -9,7 +9,7 @@ body{
 
 .container{
     width: 1000px;
-    margin: auto;
+    margin:0 auto;
     padding: 20px;
     transition: 0.5s;
 }
@@ -25,9 +25,8 @@ header h1 {
     margin: 0;
 }
 .searchBox {
-    position: fixed;
-    top: 60px;
-    right: 600px;
+    position:sticky;
+    top: 55px;
 }
 
 .searchBox input[type="text"] {
@@ -178,4 +177,29 @@ header .shopping span{
 }
 .listCart .count{
     margin: 0 10px;
+}
+.card .payment {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card .payment input[type="radio"] {
+    margin-right: 5px;
+}
+.placeOrderBtn {
+    background-color: #1C1F25;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.placeOrderBtn:hover {
+    background-color: green;
 }
