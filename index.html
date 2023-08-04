@@ -12,6 +12,9 @@
     <div class="container">
         <header>
             <h1>Delicious Delights.</h1>
+            <div class="searchBox">
+                <input type="text" id="searchInput" placeholder="Search for items...">
+            </div>
             <div class="shopping">
                 <img src="image/shopping.svg">
                 <span class="quantity">0</span>
@@ -27,8 +30,15 @@
         <ul class="listCart">
         </ul>
         <div class="checkOut">
-            <div class="total">0</div>
-            <div class="closeShopping">Check Out</div>
+            <div class="total">Total: Ksh0</div>
+            <div class="payment">
+                <input type="radio" id="creditCard" name="paymentOption" value="Credit Card" checked>
+                <label for="creditCard">Credit Card</label>
+                <input type="radio" id="paypal" name="paymentOption" value="PayPal">
+                <label for="paypal">PayPal</label>
+            </div>
+            <button class="placeOrderBtn">Place Order</button>
+            <div class="closeShopping">Close</div>
         </div>
     </div>
 

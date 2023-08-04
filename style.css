@@ -24,6 +24,18 @@ header h1 {
     color: #1C1F25;
     margin: 0;
 }
+.searchBox {
+    position: fixed;
+    top: 60px;
+    right: 600px;
+}
+
+.searchBox input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+}
 header .shopping{
     position: relative;
     text-align: right;
