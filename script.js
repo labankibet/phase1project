@@ -1,3 +1,22 @@
+// Fetch food item data from the API
+async function fetchFoodItems() {
+    try {
+        const response = await fetch('/api/food-items');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching food items:', error);
+        return [];
+    }
+}
+
+// Initialize the app with the fetched food items
+async function initApp() {
+    const products = await fetchFoodItems();
+    // Rest of your initialization code...
+}
+
+initApp();
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
